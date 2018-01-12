@@ -4,11 +4,20 @@
 Например, a=0, b=2, c=5, тогда новые значения a=2, b=3 и c=7.
 '''
 
+# a = 0 new a = old a + old b = 2
+# b = 2 new b = old c - new a = 3
+# c = 5 new c = old a + old b + old c = 7
+
 a = 0
 b = 2
 c = 5
 
-# a = 0 new a = old a + old b = 2
-# b = 2 new b = old c - new a = 3
-# c = 5 new c = old a + old b + old c = 7
+a_2 = a + b
+b_2 = c - a_2
+c_2 = a + b + c
+
+print(a_2, b_2, c_2)
+
+
+
 
