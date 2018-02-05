@@ -48,13 +48,11 @@ else:
 '''
 решение 3 (ХОРОШЕЕ)
 '''
-try:
-    x, y = input('Введите значение X и Y через пробел: ').split(' ')
-    if int(x) >= 0 and int(y) >= 0 and int(y) <= int(x)**2:
-        decision = m.sqrt(int(x) - (m.sqrt(int(y))))
-        print(decision)
-    else:
-        print('Ошибка. Значение Х и У должны быть больше или равны нулю. Значение X^2 должно быть больше или равно У.')
-except ValueError:
-    print('Вы ввели неправильное значение, попробуйте еще раз.')
+
+x, y = input('Введите значение X и Y через пробел: ').split(' ')
+if int(x) >= 0 and int(y) >= 0 and int(y) <= int(x)**2:
+    decision = m.sqrt(int(x) - (m.sqrt(int(y))))
+    print(decision)
+else:
+    print('Ошибка. Значение Х и У должны быть больше или равны нулю. Значение X^2 должно быть больше или равно У.')
 
