@@ -3,3 +3,8 @@
 иначе поменять значения этих переменных и вывести их на экран.
 '''
 
+numbers = input('Введите числа через пробел: ').split(' ')
+if int(numbers[0]) > int(numbers[1]):
+    print('Yes')
+else:
+    print(numbers[1], numbers[0])
