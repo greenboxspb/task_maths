@@ -6,57 +6,51 @@
 import math as m
 
 '''
-решение 1
+решение 1 (ПЛОХОЕ)
 '''
 
-try:
-    x = int(input('Введите значение X: '))
-    if x < 0:
-        print('Ошибка, введите число больше или равно нулю')
+
+x = int(input('Введите значение X: '))
+if x < 0:
+    print('Ошибка, введите число больше или равно нулю')
+y = int(input('Введите значение Y: '))
+if y < 0:
+    print('Ошибка, введите число больше или равно нулю')
+if y > x**2:
+    print('Ошибка. значение Х должно быть больше или равно У')
+else:
+    decision = m.sqrt(x - m.sqrt(y))
+    print(decision)
+
+
+
+
+'''
+решение 2 (СРЕДНЕЕ)
+'''
+
+x = int(input('Введите значение X: '))
+if x >= 0:
     y = int(input('Введите значение Y: '))
-    if y < 0:
-        print('Ошибка, введите число больше или равно нулю')
-    if y > x**2:
-        print('Ошибка. значение Х должно быть больше или равно У')
-    else:
-        decision = m.sqrt(x - m.sqrt(y))
-        print(decision)
-except ValueError:
-    print('Ошибка, попробуйте еще раз')
-
-
-
-'''
-решение 2
-'''
-
-try:
-    x = int(input('Введите значение X: '))
-    if x >= 0:
-        y = int(input('Введите значение Y: '))
-        if y >= 0:
-            if y <= x ** 2:
-                decision = m.sqrt(x - m.sqrt(y))
-                print(decision)
-            else:
-                print('Ошибка. Значение X^2 должно быть больше или равно значению Y')
+    if y >= 0:
+        if y <= x ** 2:
+            decision = m.sqrt(x - m.sqrt(y))
+            print(decision)
         else:
-            print('Ошибка. значение Y должно быть больше или равно нолю')
+            print('Ошибка. Значение X^2 должно быть больше или равно значению Y')
     else:
-        print('Ошибка. значение X должно быть больше или равно нолю')
-except ValueError:
-    print('Ошибка. Попробуйте еще раз')
+        print('Ошибка. значение Y должно быть больше или равно нолю')
+else:
+    print('Ошибка. значение X должно быть больше или равно нолю')
 
 
 
 '''
-решение 3
+решение 3 (ХОРОШЕЕ)
 '''
-
 try:
     x, y = input('Введите значение X и Y через пробел: ').split(' ')
-
-    if int(x) >= 0 and int(y) <= int(x)**2:
+    if int(x) >= 0 and int(y) >= 0 and int(y) <= int(x)**2:
         decision = m.sqrt(int(x) - (m.sqrt(int(y))))
         print(decision)
     else:
