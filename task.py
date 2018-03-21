@@ -11,11 +11,18 @@ month = int(input('Введите цифру месяца: '))
 
 if 1 <= month <= 2 or month == 12:
     print('Winter')
-if 3 <= month <= 5:
+elif 3 <= month <= 5:
     print('Spring')
-if 6 <= month <= 8:
+elif 6 <= month <= 8:
     print('Summer')
-if 9 <= month <= 11:
+elif 9 <= month <= 11:
     print('Autumn')
-if month <= 0 or month >= 13:
+else:
     print('Ошибка, введите значение от 1 до 12')
+
+
+
+
+
+
+
