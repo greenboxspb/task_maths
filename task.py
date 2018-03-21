@@ -8,32 +8,32 @@
 
 num = int(input('Введите число: '))
 
+
 '''
 Вариант 1
 '''
+
 if 2 <= num <= 5:
     print(num + 10)
-if 7 <= num <= 40:
+elif 7 <= num <= 40:
     print(num - 100)
-if num < 0 or num > 3000:
+elif num < 0 or num > 3000:
     print(num * 3)
-if 0 <= num <= 1 or num == 6 or 41 <= num <= 3000:
-    num = 0
-    print(num)
-
+else:
+    print(0)
 
 '''
 Вариант 2
 '''
-'''
-нет мыслей!
-'''
 
-
-# num = num + 10 if 2 <= num <= 5 else 0
-# num = num - 100 if 7 <= num <= 40 else 0
-# num = num * 3 if num < 0 or num > 3000 else 0
-# print(num)
-
-# print(num + 10 if 2 <= num <= 5 else 0, num - 100 if 7 <= num <= 40 else 0, num * 3 if num < 0 or num > 3000 else 0)
+if 2 <= num <= 5:
+    print(num + 10)
+else:
+    if 7 <= num <= 40:
+        print(num - 100)
+    else:
+        if num < 0 or num > 3000:
+            print(num * 3)
+        else:
+            print(0)
 
