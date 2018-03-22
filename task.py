@@ -12,11 +12,12 @@ num = input('Введите два числа через пробел: ').split(
 
 
 number = int(num[0])
-number2 = int(num[1])
-if number != 10 and number2 != 10 and number2 % 2 == 0:
-    print(number + number2, 'a')
+number_2 = int(num[1])
+print(number, 'and', number_2)
+if number != 10 and number_2 != 10 and number_2 % 2 == 0:
+    print(number + number_2, 'a')
 else:
-    print(number * number2, 'b')
+    print(number * number_2, 'b')
 
 '''
 Вариант 2
