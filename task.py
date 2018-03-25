@@ -13,17 +13,12 @@ num = input('Введите два числа через пробел: ').split(
 
 number = int(num[0])
 number_2 = int(num[1])
-print(number, 'and', number_2)
-if number != 10 and number_2 != 10 and number_2 % 2 == 0:
-    print(number + number_2, 'a')
+
+if number != 10 and number_2 != 10 and number % 2 == 0:
+    print('Числа не равны 10 и первое число четное =', number + number_2)
 else:
-    print(number * number_2, 'b')
+    print('Числа, возможно, равны 10 и первое число не четное =', number * number_2)
 
 '''
 Вариант 2
 '''
-
-# number = int(num[0])
-# number2 = int(num[1])
-# number = number + number2 if number != 10 and number2 != 10 and number2 % 2 == 0 else number * number2, 'a'
-# print(number)
