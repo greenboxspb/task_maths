@@ -9,12 +9,10 @@
 
 num = input('Введите 3 числа через пробел: ').split(' ')
 
-num1 = int(num[0])
-num2 = int(num[1])
-num3 = int(num[2])
+n1, n2, n3 = int(num[0]), int(num[1]), int(num[2])
 
-if num1 > 10 and num2 > 10 and num3 > 10:
-    if num1 % 3 == 0 and num2 % 3 == 0:
+if n1 and n2 and n3 > 10:
+    if n1 % 3 == 0 and n2 % 3 == 0:
         print('Yes')
     else:
         print('No')
@@ -22,16 +20,3 @@ else:
     print('No')
 
 
-'''
-Вариант 2
-'''
-
-num1, num2, num3 = int(num[0]), int(num[1]), int(num[2])
-
-if num1 > 10 and num2 > 10 and num3 > 10:
-    if num1 % 3 == 0 and num2 % 3 == 0:
-        print('Yes')
-    else:
-        print('No')
-else:
-    print('No')
