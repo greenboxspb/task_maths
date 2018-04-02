@@ -5,10 +5,10 @@
 nums = input('Введите 3 числа через пробел: ').split()
 n1, n2, n3 = int(nums[0]), int(nums[1]), int(nums[2])
 n = 0
-if n1 % 2 == 0:
+if n1 > 0:
     n += 1
-if n2 % 2 == 0:
+if n2 > 0:
     n += 1
-if n3 % 2 == 0:
+if n3 > 0:
     n += 1
 print('Количество положительных чисел - {0}'.format(n))
