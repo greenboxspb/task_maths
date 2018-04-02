@@ -7,7 +7,7 @@
 nums = input('Введите четырёхзачное число: ').split(' ')
 n1, n2, n3, n4 = int(nums[0]), int(nums[1]), int(nums[2]), int(nums[3])
 
-if n2 == (n1 - 1) and n3 == (n2 - 1) and n4 == (n3 - 1):
+if n2 == n1 - 1 and n3 == n2 - 1 and n4 == n3 - 1:
     print('Да. Цифры расположены по убыванию')
 else:
     print('НЕТ')
