@@ -1,36 +1,34 @@
 '''
-Дано четырехзначное число.
-Переставьте местами цифры так, чтобы сначала оказались цифры, меньшие пяти.
+Даны два трехзначных числа.
+Получите новое число присоединением второго числа справа к первому без последних цифр у каждого.
+Например, 123 и 456 Ответ: 1245
 '''
 
 '''
-если используем сортировку
+через создание новых списков и удаление элементов
 '''
-nums = list(input('Введите четырехзначное число: '))
 
-if int(nums[0]) < 5 or int(nums[1]) < 5 or int(nums[2]) < 5 or int(nums[3]) < 5:
-    nums.sort()
-print(''.join(nums))
+nums = input('Введите два трехзначных числа через пробел: ').split(' ')
+
+nums_1 = list(nums[0])
+nums_1.pop()
+nums_2 = list(nums[1])
+nums_2.pop()
+print(''.join(nums_1 + nums_2))
+
+'''
+через сознание новых списков и их срезы 
+'''
+
+nums = input('Введите два трехзначных числа через пробел: ').split(' ')
+
+nums_1 = list(nums[0])
+nums_2 = list(nums[1])
+print(''.join(nums_1[0:2] + nums_2[0:2]))
 
 
 '''
-если используем копию списка и пустой список
+просто через срезы
 '''
-nums = list(input('Введите четырехзначное число: '))
-
-new_nums = nums.copy()
-nums_2 = []
-if int(nums[0]) < 5:
-    nums_2.append(nums[0])
-    new_nums.remove(nums[0])
-if int(nums[1]) < 5:
-    nums_2.append(nums[1])
-    new_nums.remove(nums[1])
-if int(nums[2]) < 5:
-    nums_2.append(nums[2])
-    new_nums.remove(nums[2])
-if int(nums[3]) < 5:
-    nums_2.append(nums[3])
-    new_nums.remove(nums[3])
-print(''.join(nums_2 + new_nums))
-
+nums = input('Введите два трехзначных числа через пробел: ').split(' ')
+print(''.join(nums[0][0:2] + nums[1][0:2]))
