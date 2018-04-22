@@ -5,30 +5,41 @@
 '''
 
 '''
-через создание новых списков и удаление элементов
+через условия
 '''
 
 nums = input('Введите два трехзначных числа через пробел: ').split(' ')
 
-nums_1 = list(nums[0])
-nums_1.pop()
-nums_2 = list(nums[1])
-nums_2.pop()
-print(''.join(nums_1 + nums_2))
+if len(nums[0]) == 3 and len(nums[1]) == 3:
+    print(nums[0][:2] + nums[1][:2])
+else:
+    print('error')
+
+'''
+через создание новых списков и удаление элементов
+'''
+
+# nums = input('Введите два трехзначных числа через пробел: ').split(' ')
+#
+# nums_1 = list(nums[0])
+# nums_1.pop()
+# nums_2 = list(nums[1])
+# nums_2.pop()
+# print(''.join(nums_1 + nums_2))
 
 '''
 через сознание новых списков и их срезы 
 '''
 
-nums = input('Введите два трехзначных числа через пробел: ').split(' ')
-
-nums_1 = list(nums[0])
-nums_2 = list(nums[1])
-print(''.join(nums_1[0:2] + nums_2[0:2]))
+# nums = input('Введите два трехзначных числа через пробел: ').split(' ')
+#
+# nums_1 = list(nums[0])
+# nums_2 = list(nums[1])
+# print(''.join(nums_1[0:2] + nums_2[0:2]))
 
 
 '''
 просто через срезы
 '''
-nums = input('Введите два трехзначных числа через пробел: ').split(' ')
-print(''.join(nums[0][0:2] + nums[1][0:2]))
+# nums = input('Введите два трехзначных числа через пробел: ').split(' ')
+# print(''.join(nums[0][0:2] + nums[1][0:2]))
