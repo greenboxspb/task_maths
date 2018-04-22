@@ -4,13 +4,14 @@
 '''
 
 '''
-если используем сортировку
+если используем сортировку (хитрый способ, ведь не говориться как именно
+нужно переставить местами цифры)
 '''
-nums = list(input('Введите четырехзначное число: '))
-
-if int(nums[0]) < 5 or int(nums[1]) < 5 or int(nums[2]) < 5 or int(nums[3]) < 5:
-    nums.sort()
-print(''.join(nums))
+# nums = list(input('Введите четырехзначное число: '))
+#
+# if int(nums[0]) < 5 or int(nums[1]) < 5 or int(nums[2]) < 5 or int(nums[3]) < 5:
+#     nums.sort()
+# print(''.join(nums))
 
 
 '''
