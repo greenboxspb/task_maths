@@ -10,5 +10,5 @@ rate = int(input('Введите курс доллара в рублях: '))
 
 dollar = 1
 while dollar <= 100:
-    print('{0}$ - {1} р - {2} кг'.format(dollar, rate * dollar, round((rate * dollar) / 20, 1)))
+    print('{0}$ - {1} р - {2} кг'.format(dollar, rate * dollar, (rate * dollar) / 20))
     dollar += 1
