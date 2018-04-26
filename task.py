@@ -4,7 +4,7 @@
 
 nums = 100
 list_nums = []
-while nums > 4:
+while nums > 0:
     list_nums.append(str(nums))
     nums -= 4
-print(', '.join(list_nums) + '{0}'.format(', 4.'))
+print(', '.join(list_nums) + '{0}'.format(', 0.'))
