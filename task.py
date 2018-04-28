@@ -21,5 +21,5 @@
 
 user_string = int(input('Введите количество строк: '))
 
-for line in list(range(0, user_string)):
+for line in range(user_string):
     print('0' * 5)
