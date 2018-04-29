@@ -6,7 +6,18 @@
 '''
 
 
+'''
+через while
+'''
+
 nums = 25
 while nums <= 35:
     print(nums, '{0} {1}'.format(nums + 0.5, nums - 0.2))
     nums += 1
+
+'''
+через for
+'''
+
+for nums in range(25, 36):
+    print(nums, '{0} {1}'.format(nums + 0.5, nums - 0.2))
